@@ -1,0 +1,41 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Environment variable files
+.env
+.env.*
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Flask instance folder (if used)
+instance/
+
+# Pytest or test logs
+htmlcov/
+.coverage
+*.log
+
+# VSCode or IDE settings
+.vscode/
+.idea/
+
+# Database (SQLite) files
+*.sqlite3
+*.db
+
+# Flask migration files (optional)
+migrations/
+
+# Compiled frontend assets (if using JS build tools)
+node_modules/
+dist/
+build/
