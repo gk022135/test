@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template,jsonify
 
 app = Flask(__name__)
 
@@ -30,6 +30,11 @@ def home():
 @app.route('/home')
 def home2():
     return render_template('home2.html', Data = Data)
+
+#sending data in the form of json
+@app.route('/json')
+def jsonData():
+    return jsonify(Data)
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
