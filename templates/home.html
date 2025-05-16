@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Learning python flask</title>
-    <link rel="stylesheet" href="home.css"></head>
+    <title>Learning Python Flask</title>
+    <link rel="stylesheet" href="home.css">
+</head>
 
-<body class = "body" style="background-color: black; color: aqua;">
+<body class="body" style="background-color: black; color: aqua;">
     <div>
         <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, corporis.</h1>
     </div>
     <div>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia cupiditate id quibusdam. Fugiat iure magnam et laudantium, autem ullam! Ad?</p>
+        <button class="btn">Click</button>
+        <div id="message"></div> <!-- Placeholder to show message -->
     </div>
 
-</body>
+    <script>
+        function buttonClick() {
+            document.getElementById("message").innerHTML = "<h1>You clicked the button</h1>";
+        }
 
+        document.querySelector(".btn").addEventListener("click", buttonClick);
+    </script>
+</body>
 </html>
